@@ -1,0 +1,51 @@
+body{
+    background-image: url("img/RSUT.png");
+    padding: 100px;
+    margin: 10px;
+}
+
+#game{
+    background-color: white;
+    width:  450px;
+    height: 700px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+}
+
+#block{
+    width: 40px;
+    height: 700px;
+    background-color: black;
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+}
+/*Animace bloku, která začíná v levo a končí v pravo*/
+@keyframes block{
+    0%{left:450px}
+    100%{left:-50px}
+}
+
+#hole{
+    width: 40px;
+    height: 180px;
+    background-color: white;
+    position: relative;
+    left: 450px;
+    top: -700px;
+    animation: block 2s infinite linear;
+}
+
+
+#character{
+    width: 61px;
+    height: 50px;
+    background-image: url("img/Vit7.png");
+    position: absolute;
+    top: 300px;
+}
+
+.mid{
+    text-align: center;
+}
