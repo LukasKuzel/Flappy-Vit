@@ -1,6 +1,8 @@
 let block = document.getElementById("block")
 let hole = document.getElementById("hole")
 let character = document.getElementById("character")
+let music = new Audio('music/elephant.mp3');
+let music2 = new Audio('music/vitaRustRage-1.mp3');
 let jumping = 0;
 let counter = 0;
 
@@ -16,17 +18,21 @@ setInterval(function(){
     parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     if(jumping==0){
         character.style.top = (characterTop+3)+"px";
+    }else{
+        audio();
     }
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     let holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
     let cTop = -(700-characterTop);
     if((characterTop>680)||((blockLeft<61)&&(blockLeft>-150)&&((cTop<holeTop)||(cTop>holeTop+160)))){
+            music.pause();
+            audio2();
         if (confirm("Game is over. Score: "+counter+" Try again?")) {
             location.reload();
           } else {
             alert ("Thanks for playing.");
             close();
-          }
+          }          
         character.style.top = 100 + "px";  
         counter=0;
     }
@@ -49,3 +55,14 @@ function jump(){
         jumpCount++;
     },10);  
 }  
+
+function audio(){
+        music.volume = 0.3
+        music.play();
+}
+
+function audio2(){
+    music2.volume = 0.3
+    music2.currentTime = 0;
+    music2.play();
+}

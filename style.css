@@ -8,7 +8,7 @@ body{
     background-image: url("img/oreo2.jpg");
     width:  600px;
     height: 700px;
-    border: 1px solid black;
+    border: 5px solid black;
     margin: auto;
     overflow: hidden;
 }
