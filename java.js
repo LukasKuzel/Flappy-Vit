@@ -48,7 +48,6 @@ setInterval(function(){
 function jump(){  
     jumping = 1;
     let jumpCount = 0;
-   
     let jumpInterval = setInterval(function(){
         let characterTop = 
         parseInt(window.getComputedStyle(character).getPropertyValue("top"));
@@ -87,3 +86,4 @@ function audio4(){
     fly.currentTime = 3;
     fly.play();
 }
+
