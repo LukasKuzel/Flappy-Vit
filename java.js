@@ -44,7 +44,7 @@ function jump(){
     let jumpInterval = setInterval(function(){
         let characterTop = 
         parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-        if((characterTop>6)&&(counter<15)){
+        if((characterTop>6)&&(counter<1000)){
             character.style.top = (characterTop-5)+"px";
         }
         if(jumpCount>20){
@@ -66,3 +66,4 @@ function audio2(){
     music2.currentTime = 0;
     music2.play();
 }
+
