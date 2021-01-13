@@ -1,12 +1,12 @@
 body{
-    background-image: url("img/RSUT.png");
-    padding: 100px;
-    margin: 10px;
+    background-image: url("img/cig.jpg");
+    padding: 0;
+    margin: 0;
 }
 
 #game{
-    background-color: white;
-    width:  450px;
+    background-image: url("img/oreo2.jpg");
+    width:  600px;
     height: 700px;
     border: 1px solid black;
     margin: auto;
@@ -14,25 +14,25 @@ body{
 }
 
 #block{
-    width: 40px;
+    width: 70px;
     height: 700px;
-    background-color: black;
+    background-image: url("img/zmenseny2.0-removebg-preview.png");
     position: relative;
-    left: 400px;
+    left: 600px;
     animation: block 2s infinite linear;
 }
 /*Animace bloku, která začíná v levo a končí v pravo*/
 @keyframes block{
-    0%{left:450px}
+    0%{left:600px}
     100%{left:-50px}
 }
 
 #hole{
-    width: 40px;
-    height: 180px;
-    background-color: white;
+    width: 70px;
+    height: 200px;
+    background-image: url("img/zdravyzivot2.jpg");
     position: relative;
-    left: 450px;
+    left: 600px;
     top: -700px;
     animation: block 2s infinite linear;
 }
@@ -43,9 +43,10 @@ body{
     height: 50px;
     background-image: url("img/Vit7.png");
     position: absolute;
-    top: 300px;
+    top: 100px;
 }
 
 .mid{
     text-align: center;
 }
+
