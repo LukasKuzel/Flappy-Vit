@@ -1,10 +1,11 @@
-let block = document.getElementById("block")
-let hole = document.getElementById("hole")
-let character = document.getElementById("character")
+let block = document.getElementById("block");
+let hole = document.getElementById("hole");
+let character = document.getElementById("character");
+let score = document.getElementById("score");
 let music = new Audio('music/elephant.mp3');
 let ragerust = new Audio('music/vitaRustRage-1.mp3');
-let haha = new Audio('music/haha.mp3')
-let fly = new Audio('music/Chrapot11.mp3')
+let haha = new Audio('music/haha.mp3');
+let fly = new Audio('music/Chrapot11.mp3');
 let jumping = 0;
 let counter = 0;
 
@@ -13,6 +14,7 @@ hole.addEventListener('animationiteration', () => {
     let random = -((Math.random()*400)+250);
     hole.style.top = random + "px";
     counter++;
+    score.innerHTML = "Score : " + counter;
 });
 
 setInterval(function(){
@@ -21,7 +23,7 @@ setInterval(function(){
     if(jumping==0){
         character.style.top = (characterTop+3)+"px";
     }else{
-        music.play();
+        audio();
     }
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     let holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
@@ -65,18 +67,18 @@ function jump(){
 }
 
 function audio(){
-        music.volume = 0.3
+        music.volume = 0.2;
         music.play();
 }
 
 function audio2(){
-    ragerust.volume = 0.2
+    ragerust.volume = 0.2;
     ragerust.currentTime = 0;
     ragerust.play();
-    haha.volume = 0.5
+    haha.volume = 0.5;
     haha.currentTime = 0;
     haha.play();
-    fly.volume = 0.5
+    fly.volume = 0.5;
     fly.currentTime = 3;
     fly.play();
 }
