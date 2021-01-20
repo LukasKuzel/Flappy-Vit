@@ -11,7 +11,8 @@ let MusicPole = ['music/haha.mp3', 'music/piratesong1.mp3', 'music/jabadabadu.mp
 'music/dragonborn.mp3', 'music/Testyzakum.mp3', 'music/drunkensailor.mp3', 'music/jetamhlava.mp3', 'music/ps2.mp3', 'music/ps3.mp3', 
 'music/ps4.mp3', 'music/vypatlanyrealne.mp3', 'music/jsemuprostředhry.mp3', 'music/ps5.mp3', 'music/snazilsedostat.mp3', 
 'music/kid.mp3', 'music/ps6.mp3', 'music/zasedostalhlavu.mp3', 'music/menofmedan.mp3', 'music/acomamdelat.mp3', 'music/polak.mp3', 
-'music/wisky.mp3', 'music/gofuck.mp3', 'music/chill_bill.mp3', 'music/irishrock.mp3', 'music/putinwalk.mp3', 'music/kdyzreciklujes.mp3'];
+'music/wisky.mp3', 'music/gofuck.mp3', 'music/chill_bill.mp3', 'music/irishrock.mp3', 'music/putinwalk.mp3', 'music/kdyzreciklujes.mp3', 
+'music/aaaaaa.mp3', 'music/aaaaaa2', 'music/1.mp3', 'music/2.mp3', 'music/3.mp3', 'music/4.mp3'];
 let audioPole = new Audio ();
 
 /*Pokaždé, když se spustí tato funkce, tak s ní i animace */ 
